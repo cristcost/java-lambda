@@ -1,0 +1,11 @@
+target/
+.settings/
+.checkstyle
+.classpath
+.pmd
+.pmdruleset
+.pmdruleset.xml
+.project
+.DS_Store
+
+sensormix-admin-webapp/.gwt/.gwt-log
