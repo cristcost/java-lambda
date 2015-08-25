@@ -28,6 +28,7 @@ public class LambdaGameWithoutLambda {
 
   // this class runs also on Java 7
   public static void main(String[] args) {
+    howManyConsonantsProcedural();
     howManyConsonantsJava7();
     eachStepOfHowManyConsonantsJava7();
   }
@@ -36,6 +37,19 @@ public class LambdaGameWithoutLambda {
   static List<String> list =
       Arrays.asList("Cristiano", "Michele", "Sergio", "Giuseppe", "Stefano");
 
+  // lets count how many consonants in all the names
+  public static void howManyConsonantsProcedural() {
+
+    Integer out = 0;
+    for (String name : list) {
+      String consonants = name.replaceAll("[aeiou]", "");
+      int length = consonants.length();
+      out += length;
+    }
+
+    System.out.println("howManyConsonantsProcedural: there are " + out + " consonants");
+  }
+  
   // implementation without lambda and without java 8 streams
   public static void howManyConsonantsJava7() {
 

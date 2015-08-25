@@ -195,8 +195,8 @@ public class LambdaGame {
     System.out.println("howManyConsonantsPseudoJava7Inlineless: there are " + out + " consonants");
   }
 
-  // we haven't used lambda but we are still using Java 8 features, what's without?
+  // we haven't used lambda but we are still using Java 8 streams, what's without?
   public static void howManyConsonantsJava7() {
-    LambdaGameWithoutLambda.howManyConsonantsJava7();
+    LambdaGameWithoutLambda.main(null);
   }
 }
